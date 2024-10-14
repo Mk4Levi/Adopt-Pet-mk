@@ -1,0 +1,140 @@
+/* TopNavbar CSS */
+
+.topNavbar {
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  background: #1b1a2ea9;
+  /* color: var(--headingColor); */
+  /* color: white; */
+  position: fixed;
+  z-index: 10;
+}
+
+.leftNav {
+  width: 250px;
+}
+
+.leftNav div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.leftNav img {
+  width: 45px;
+  height: 40px;
+}
+
+.leftNav h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.rightOuterDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rightOuterDiv a {
+  text-decoration: none;
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.rightNav li {
+  margin: 0 12px;
+}
+
+.rightNav a {
+  text-decoration: none;
+  font-size: 20px;
+  /* color: var(--headingColor); */
+  color: white;
+  transition: 0.1s ease-in;
+}
+
+.rightNav a:hover {
+  font-weight: 700;
+  transition: 0.3s ease;
+  box-shadow: 0px 0px 10px rgb(188, 37, 37);
+  padding: 2% 5%;
+  border-radius: 15%;
+  color: black;
+  background: skyblue;
+}
+
+.loginBtn {
+  border: 2px solid var(--headingColor);
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.1s;
+  margin: 15px;
+  cursor: pointer;
+  /* color: var(--headingColor); */
+  color: white;
+}
+
+.loginBtn:hover {
+  transition: 0.3s ease;
+  box-shadow: 0px 0px 10px rgb(188, 37, 37);
+  border: 2px solid var(--secondaryColor);
+  /* color: var(--secondaryColor); */
+  color: black;
+  background: skyblue;
+}
+
+.loginBtn:active {
+  transform: translateY(2px);
+}
+
+@media (width <= 850px) {
+  .rightNav,
+  .loginBtn {
+    display: none;
+  }
+}
+
+@media (width <= 1000px) {
+  .rightNav li {
+    margin: 0 5px;
+  }
+
+  .rightNav a {
+    font-size: 18px;
+  }
+}
+
+@media (width <= 350px) {
+  .leftNav h1 {
+    font-size: 1.5em;
+  }
+}
+
+.signin-btns {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* gap: 1px; */
+}

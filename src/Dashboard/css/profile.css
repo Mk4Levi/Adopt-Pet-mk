@@ -1,0 +1,275 @@
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.profile-container {
+  background-color: #ffffff;
+  /* padding: 10% 25%; */
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  width: 91vw;
+  /* height: 100vh; */
+  /* margin: 20px 30px 20px 60px; */
+
+  -webkit-box-shadow: 0px 5px 15px 8px #e4e7fb;
+  box-shadow: 0px 5px 15px 8px #e4e7fb;
+}
+
+.profile-container h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(0, 7, 61);
+  margin-bottom: 30px;
+}
+
+.profile-form {
+  margin: 0 auto;
+  width: 500px;
+  /* padding: 0 5vw; */
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  justify-content: center;
+}
+
+.input-container {
+  position: relative;
+  margin: 20px 0;
+  width: 200px;
+}
+
+.input-container input[type="text"] {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container .label {
+  position: absolute;
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  color: #5a5a5a;
+
+  transition: all 0.3s ease;
+  pointer-events: none;
+  padding-bottom: 10px;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+
+  color: #000000;
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.input-container input[type="date"] {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container input[type="date"]:focus ~ .label,
+.input-container input[type="date"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input-container input[type="date"]:focus ~ .underline,
+.input-container input[type="date"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.input-container input[type="email"] {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  /* border-bottom: 2px solid #ccc; */
+  padding: 10px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container input[type="email"]:focus ~ .label,
+.input-container input[type="email"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input-container input[type="email"]:focus ~ .underline,
+.input-container input[type="email"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.input-container input[type="number"] {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container input[type="number"]:focus ~ .label,
+.input-container input[type="number"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input-container input[type="number"]:focus ~ .underline,
+.input-container input[type="number"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.input-container input[type="link"] {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container input[type="link"]:focus ~ .label,
+.input-container input[type="link"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input-container input[type="link"]:focus ~ .underline,
+.input-container input[type="link"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.save-btn {
+  position: relative;
+  background-color: rgb(5, 219, 140);
+  border-radius: 5px;
+  box-shadow: rgb(1, 128, 82) 0px 4px 0px 0px;
+  padding: 0 15px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.edit-btn {
+  position: relative;
+  background-color: #ff4141;
+  border-radius: 5px;
+  box-shadow: rgb(1, 128, 82) 0px 4px 0px 0px;
+  padding: 0 15px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.save-btn::before {
+  content: "";
+  background-color: rgb(32, 170, 120);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 700ms ease-in-out;
+  display: inline-block;
+}
+
+.save-btn:hover::before {
+  width: 100%;
+}
+
+.save-btn:active {
+  transform: translate(0em, 0.1em);
+  /* border: 3px solid #fff; */
+  transition: width 100ms ease-in-out;
+}
+
+@media screen and (max-width: 550px) {
+  .profile-form {
+    width: 250px;
+  }
+
+  .sendOTP-btn {
+    margin: 0 auto 5rem;
+  }
+
+  .otp-container {
+    margin-bottom: 0;
+  }
+
+  .input-container {
+    margin: 10px 0;
+  }
+}
+
+.sendOTP-btn:hover {
+  /* background: rgb(2, 0, 36); */
+  background: #ff0000;
+}
+
+.sendOTP-btn:active {
+  transform: translate(0em, 0.1em);
+}

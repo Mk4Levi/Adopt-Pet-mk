@@ -1,0 +1,126 @@
+.ideas-container {
+  width: 650px;
+  padding-top: 5px;
+}
+
+.ideas-container h3 {
+  color: rgb(0, 7, 61);
+  font-size: 30px;
+}
+
+.idea-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.idea-input textarea {
+  width: 100%;
+  height: 30vh;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 15px;
+  color: rgb(0, 7, 61);
+  font-weight: 450;
+  line-height: 1.2;
+  background-color: #faf9ff;
+  box-shadow: rgb(210, 210, 210) 0px 0px 4px 2px;
+}
+
+.idea-input textarea:focus {
+  outline: rgb(0, 7, 61) solid 2px;
+}
+
+.past-ideas {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  margin-top: 20px;
+  gap: 3px;
+}
+
+.idea-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 7, 61);
+  padding: 15px 20px;
+  color: white;
+  gap: 40px;
+  cursor: pointer;
+  /* box-shadow: rgb(0, 7, 61) 0px 0px 2px; */
+}
+
+.idea-row:hover {
+  background: rgb(0, 7, 61, 0.8);
+}
+
+.idea-sumbit-btn {
+  width: 90px;
+  padding: 5px 0;
+  background-color: #05db8c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: black 0px 0px 3px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 5px 0 30px;
+}
+
+.idea-sumbit-btn:active {
+  transform: scale(0.96);
+}
+
+.idea-sumbit-btn:hover {
+  background-color: #07c84e;
+}
+
+.idea-status {
+  background-color: orange;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.idea-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  /* border:1px solid; */
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 800px) {
+  .ideas-container {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ideas-container {
+    margin-left: 50px;
+  }
+
+  .idea-row {
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .ideas-container {
+    margin-left: 55px;
+    width: 75vw;
+  }
+}
