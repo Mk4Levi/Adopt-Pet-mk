@@ -1,0 +1,99 @@
+.item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: rgb(0, 7, 61);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 100px;
+  font-size: 200%;
+}
+
+.page-content h2 {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgb(0, 7, 61);
+  margin-bottom: 30px;
+}
+
+.left {
+  display: flex;
+  gap: 30px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 500px;
+}
+
+@media screen and (max-width: 650px) {
+  .list {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .page-content h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .list {
+    margin-left: 60px;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .item {
+    padding: 10px 20px;
+    font-size: 80%;
+  }
+
+  .list {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page-content h2 {
+    font-size: 30px;
+  }
+
+  /* .list {
+    margin-left: 20px;
+    width: 90vw;
+  } */
+
+  .left {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .left {
+    gap: 10px;
+  }
+
+  .list {
+    width: 80vw;
+    margin-left: 40px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .list {
+    /* font-size: 75%; */
+    margin-left: 55px;
+    width: 78vw;
+  }
+
+  .item {
+    padding: 10px 10px;
+  }
+}

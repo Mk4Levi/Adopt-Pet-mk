@@ -1,0 +1,230 @@
+.ReactModalPortal {
+  position: relative;
+  z-index: 2;
+}
+
+.ReactModal__Content {
+  background-color: #00073d;
+  border-radius: 0.5rem;
+  padding: 5rem 3rem 3rem;
+  max-width: 400px;
+  margin: 50vh 20% 20% 50%;
+  /* margin: 20% auto */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 16px;
+  transition: 0.3s ease all;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .ReactModal__Content h2 {
+  color: black;
+} */
+
+.sendOTP-btn {
+  font-size: 17px;
+  padding: 0 1em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: #ff4141;
+  color: white;
+  border-radius: 4px;
+  height: 30px;
+  margin: 2rem 6rem 0 0rem;
+  cursor: pointer;
+}
+
+.verified-btn {
+  font-size: 17px;
+  padding: 0 1em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: rgb(5, 219, 140);
+  color: white;
+  border-radius: 4px;
+  height: 30px;
+  margin: 2rem 6rem 0 0rem;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 300px;
+  padding: 10px 10px;
+}
+
+/* .modal-form div {} */
+
+.modal-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 300px;
+  padding: 20px 10px;
+}
+
+.modal-form input {
+  width: 40px;
+  height: 40px;
+  margin-right: 3px;
+  text-align: center;
+  font-size: 25px;
+  border-style: none;
+  border-radius: 7px;
+  color: #00073d;
+}
+
+.modal-form input[type="number"]:valid {
+  /* background-color: #00073d; */
+  /* color: white; */
+  box-shadow: white 0px 0px 15px;
+}
+
+.modal-form input[type="number"]:focus {
+  outline: none;
+  /* border: solid 2px #00073d; */
+  transform: scale(1.1);
+  transition: 0.3s ease all;
+}
+
+.modal-form button {
+  /* margin-top: 10px; */
+  width: 90px;
+  cursor: pointer;
+  background-color: #05db8c;
+  border-radius: 5px;
+  padding: 5px 5px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+
+.modal-form button:active {
+  transform: scale(0.96);
+}
+
+.modal-form button:hover {
+  background-color: #07c84e;
+}
+
+@media (width <= 800px) {
+  /* .ReactModal__Content {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    max-width: 800px;
+    margin: 45% 20% 20% 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 16px;
+    transition: 0.3s ease all;
+    font-size: 1em;
+    color: #7a7a7a;
+    text-align: center;
+    line-height: 1.5;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  } */
+
+  /* .modal-form input {
+    width: 30%;
+  } */
+}
+
+.verified-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 2px;
+  /* align-content: center; */
+}
+
+.verified-btn svg {
+  margin: 5px 3px 0 0;
+}
+
+@media (width <= 500px) {
+  .ReactModal__Content {
+    max-width: 250px;
+    margin: 50vh 10% 20% 50%;
+  }
+
+  .modal-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    width: 200px;
+    padding: 20px 10px;
+  }
+
+  .modal-form input {
+    width: 30px;
+    height: 30px;
+    /* margin-right: 3px; */
+    text-align: center;
+  }
+
+  .modal-form {
+    width: 200px;
+  }
+}
+
+@media (width <= 280px) {
+  .ReactModal__Content {
+    max-width: 230px;
+    margin: 50vh 0 20% 48%;
+    padding: 3rem 1rem;
+  }
+}
+
+/*  */
+
+/* TaskModal Styles */
+
+.action-btn {
+  cursor: pointer;
+}
+
+.task-modal-inputs input {
+  width: 110%;
+  height: 40px;
+  padding-left: 3%;
+  margin-right: 3px;
+  text-align: left;
+  font-size: 18px;
+  border-style: none;
+  border-radius: 7px;
+  color: #00073d;
+}
+
+/* IdeaModal Styles */
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.modal-header div:nth-child(1) {
+  margin-right: 100px;
+}
+
+.desc-title {
+  color: #13db05;
+}
+
+.idea-modal button {
+  margin: 5px;
+}

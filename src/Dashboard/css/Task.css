@@ -1,0 +1,137 @@
+.task {
+  color: black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 100px; */
+  background: #efefee;
+  padding: 15px 20px;
+  overflow-x: auto;
+}
+
+.task-list {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.page-content h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(0, 7, 61);
+  margin: 30px 0;
+}
+
+/* .desc {
+  white-space: nowrap;
+}
+
+.deadline {
+  white-space: nowrap;
+} */
+
+.desc-center {
+  /* text-align: center; */
+  /* margin: 0 auto; */
+  /* flex: 1; */
+  margin-left: 170px;
+  margin-right: 190px;
+}
+
+@media screen and (max-width: 1120px) {
+  .task-list {
+    width: 90vw;
+    margin-left: 30px;
+  }
+}
+/* @media screen and (max-width: 970px) {
+  .action-btn-center {
+    /* margin-right: 10px; 
+    /* padding-right: 50px; 
+  }
+} */
+
+@media screen and (max-width: 1000px) {
+  .row {
+    gap: 70px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .task-list {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .task-list {
+    margin-left: 60px;
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .task-list {
+    width: 80vw;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .desc-center {
+    margin-left: 20px;
+    margin-right: 340px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .task-list {
+    width: 75vw;
+    margin-left: 50px;
+  }
+}
+.heading {
+  background: rgb(0, 7, 61);
+  color: white;
+  padding-right: 7px;
+}
+
+.action-btn {
+  padding: 3px 10px;
+  height: 30px;
+  background-color: #ff4141;
+  border-style: none;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgb(170, 170, 170) 0px 0px 3px 1px;
+}
+
+.action-btn:hover {
+  background-color: #ff0000;
+}
+
+.action-btn:active {
+  transform: translate(0em, 0.08em);
+  transition: width 100ms ease-in-out;
+}
+
+/* .points-bottom {
+  margin-right: 14vw;
+} */
+
+/* .desc-bottom {
+  margin-right: 340px;
+} */
+
+/* .deadline-center {
+  margin-right: 30px;
+} */
+
+/* .action-btn-center {
+  padding-left: 40px;
+} */

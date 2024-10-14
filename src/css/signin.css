@@ -1,0 +1,304 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background: linear-gradient(#141e30, #243b55); */
+}
+
+.txt {
+  color: #fff;
+  margin-top: 0;
+}
+
+.txt-btn {
+  display: inline-block;
+  color: #03e9f4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.txt-btn:hover {
+  text-decoration: underline;
+  transform: scale(1.08);
+  transition: 0.3s;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form .signup {
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 10px 30% 30px;
+  letter-spacing: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.login-box .signup:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+  cursor: pointer;
+}
+
+.login-box .signup span {
+  position: absolute;
+  display: block;
+}
+
+.login-box .signup span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box .signup span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.login-box .signup span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.login-box .signup span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* GOOGLE CSS */
+
+.btn-text {
+  z-index: 2;
+  margin: 0.5em 0;
+}
+
+.google {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0em 1.5em;
+  border: #03e9f4 solid 0.15em;
+  border-radius: 0.25em;
+  color: #03e9f4;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  margin: 0 auto;
+}
+
+.google:hover {
+  color: #212121;
+}
+
+.google:active {
+  border-color: #03e9f4;
+}
+
+.btn-circle {
+  position: absolute;
+  width: 20em;
+  height: 8em;
+  aspect-ratio: 1;
+  background: #03e9f4;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 750ms, background 300ms;
+}
+
+.btn-circle:nth-child(1) {
+  left: 0;
+  transform: translateX(-19em);
+}
+
+.btn-circle:nth-child(2) {
+  right: 0;
+  transform: translateX(19em);
+}
+
+.google:hover .btn-circle:nth-child(1) {
+  transform: translateX(-1em);
+}
+
+.google:hover .btn-circle:nth-child(2) {
+  transform: translateX(1em);
+}
+
+.google:active .btn-circle {
+  background: teal;
+}
+
+@media screen and (max-width: 450px) {
+  .google {
+    font-size: 0.9em;
+  }
+
+  .login-box {
+    width: 250px;
+    padding: 40px 20px;
+  }
+
+  .login-box form .signup {
+    font-size: 10px;
+    padding: 10px 5px;
+    margin-top: 0;
+  }
+
+  .txt {
+    font-size: 0.8em;
+  }
+
+  .custom-toast {
+    width: 85%;
+  }
+}
+
+.custom-toast {
+  background-color: #141e30;
+  color: whitesmoke;
+}
+
+.Toastify__progress-bar {
+  background: #03e9f4;
+}
+
+.custom-toast svg {
+  fill: #03e9f4;
+}
