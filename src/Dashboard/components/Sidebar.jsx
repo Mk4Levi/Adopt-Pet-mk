@@ -53,9 +53,9 @@ const Sidebar = () => {
   const [userData] = useState({
     image: <CgProfile />,
     username: "User@Name",
-    points: "999",
-    rank: 99,
-    referral: "ABCD1234",
+    points: "234",
+    rank: 43,
+    referral: "manthan4mk",
   });
 
   return (

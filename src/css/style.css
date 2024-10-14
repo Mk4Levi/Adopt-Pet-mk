@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  color: #333;
+  /* color: #333; */
 }
 
 body {
@@ -61,13 +61,14 @@ body {
   min-height: 100px;
 }
 
-.info {
+.pet-info {
   float: left;
   width: 80%;
   height: 100px;
   padding-top: 10px;
   flex-direction: column;
   justify-content: space-around;
+  color: #000;
 }
 
 .image-container {

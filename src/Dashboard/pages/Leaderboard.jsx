@@ -11,14 +11,12 @@ const Leaderboard = () => {
         <h2 className="leaderboard-heading">Leaderboard</h2>
         <div className="center">
           <div className="list">
-            <LeaderboardItem position={0} name="Name" score={0} />
-            <LeaderboardItem position={0} name="Name" score={0} />
-            <LeaderboardItem position={0} name="Name" score={0} />
-            <LeaderboardItem position={0} name="Name" score={0} />
-            <LeaderboardItem position={0} name="Name" score={0} />
-            <LeaderboardItem position={0} name="Name" score={0} />
-            <LeaderboardItem position={0} name="Name" score={0} />
-            <LeaderboardItem position={0} name="Name" score={0} />
+            <LeaderboardItem position={1} name="Alex" score={78} />
+            <LeaderboardItem position={2} name="Amrit" score={65} />
+            <LeaderboardItem position={3} name="Erwin" score={60} />
+            <LeaderboardItem position={4} name="Manthan" score={50} />
+            <LeaderboardItem position={5} name="Eren" score={48} />
+            <LeaderboardItem position={6} name="Levi" score={40} />
           </div>
         </div>
       </div>

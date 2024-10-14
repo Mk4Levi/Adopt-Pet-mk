@@ -6,6 +6,7 @@ import SignUp from "./SignUp";
 import Login from "./Login";
 import SearchParams from "./SearchParams";
 import Details from "./Details";
+import { Profile, Ideas, Leaderboard, Task } from "../Dashboard/pages";
 import { AdoptedPetContext } from "../contexts/AdoptedPetContext";
 
 const queryClient = new QueryClient({
@@ -34,6 +35,11 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/details/:id" element={<Details />} />
+
+            <Route path="/dashboard/profile" element={<Profile />} />
+            <Route path="/dashboard/ideas" element={<Ideas />} />
+            <Route path="/dashboard/leaderboard" element={<Leaderboard />} />
+            <Route path="/dashboard/task" element={<Task />} />
           </Routes>
         </QueryClientProvider>
       </AdoptedPetContext.Provider>
