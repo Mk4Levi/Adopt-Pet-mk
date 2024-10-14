@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer, Bounce } from "react-toastify";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../css/signin.css";
 
@@ -13,15 +13,37 @@ const SignUp = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+
+    // Check if all fields are filled
     if (
-      name !== "" &&
-      email !== "" &&
-      password !== "" &&
-      confirmPassword !== ""
+      name === "" ||
+      email === "" ||
+      password === "" ||
+      confirmPassword === ""
     ) {
-      console.log("");
+      toast.error("All fields are required!", {
+        position: toast.POSITION.TOP_CENTER,
+      });
+      return;
     }
-    navigateTo("/login");
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      toast.error("Passwords do not match!", {
+        position: toast.POSITION.TOP_CENTER,
+      });
+      return;
+    }
+
+    // Handle successful signup (you can add logic here to actually register the user)
+    toast.success("Account created successfully!", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+
+    // Redirect to login page after success
+    setTimeout(() => {
+      navigateTo("/login");
+    }, 2000); // Delay to show the success toast before redirecting
   };
 
   return (
@@ -34,36 +56,44 @@ const SignUp = () => {
           <div className="user-box">
             <input
               type="text"
+              value={name}
               onChange={(e) => {
                 setName(e.target.value);
               }}
+              required
             />
             <label>Name</label>
           </div>
           <div className="user-box">
             <input
               type="email"
+              value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
+              required
             />
             <label>Email</label>
           </div>
           <div className="user-box">
             <input
               type="password"
+              value={password}
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
+              required
             />
             <label>Password</label>
           </div>
           <div className="user-box">
             <input
               type="password"
+              value={confirmPassword}
               onChange={(e) => {
                 setConfirmPassword(e.target.value);
               }}
+              required
             />
             <label>Confirm Password</label>
           </div>
@@ -74,7 +104,7 @@ const SignUp = () => {
             </Link>
           </p>
           <br />
-          <button className="signup">
+          <button type="submit" className="signup">
             <span></span>
             <span></span>
             <span></span>

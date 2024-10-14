@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import { ToastContainer, Bounce } from "react-toastify";
-import { ShowToast } from "../../components";
+import { ShowToast } from "../../components/ToastAlert";
 import "../css/modal.css";
 
 const customStyles = {

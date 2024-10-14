@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import IdeaItem from "../components/IdeaItem";
-import { ShowToast } from "../../components";
+import { ShowToast } from "../../components/ToastAlert";
 import "../css/Ideas.css";
 
 const Ideas = () => {
