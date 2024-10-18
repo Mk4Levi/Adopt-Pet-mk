@@ -4,8 +4,6 @@
 
 ## Website Link => https://adopt-pet-mk.vercel.app/
 
-## Website Link => https://adopt-pet-mk.netlify.app/
-
 ## Project's Screenshots =>
 
 ![image](./src/assets/ss1.png)
